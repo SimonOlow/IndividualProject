@@ -21,21 +21,21 @@ public class TaskReader {
                              PROJECTID = 4;
     
     /**
-     * Create a SightingReader.
+     * Create a TaskReader.
      */
     public TaskReader()
     {
     }
     
     /**
-     * Read sightings in CSV format from the given file.
-     * Return an ArrayList of Sighting objects created from
+     * Read tasks in CSV format from the given file.
+     * Return an ArrayList of Tasks objects created from
      * the information in the file.
      * 
      * @param filename The file to be read - should be in CSV format.
-     * @return A list of Sightings.
+     * @return A list of tasks.
      */
-    public ArrayList<Task> getArrayFromFile(String filename) //odczytuje do array bez przecinkow
+    public ArrayList<Task> getArrayFromFile(String filename) 
     {
         // Create a task from a CSV input line.
         Function<String, Task> createTaskList = 
