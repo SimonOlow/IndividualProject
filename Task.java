@@ -60,9 +60,8 @@ public class Task {
 	}
 	
 	 /**
-     * Return a string containing details of the task, the number seen,
-     * where they were seen, who spotted them and when.
-     * @return A string giving details of the sighting.
+     * Return a string containing details of the task
+     * @return A string giving details of the task.
      */
     public String getDetails() 
     {
