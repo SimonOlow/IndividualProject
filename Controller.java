@@ -46,13 +46,13 @@ Scanner scan = new Scanner(System.in);
 	}
 	
 	/**
-     * Add the task recorded in the given filename to the current list.
-     * @param filename A CSV file of Sighting records.
+     * Add the task saved in the given filename to the current list.
+     * @param Method add task to arraylist from the file
      */
     public void fileToArrayList(String filename, ArrayList<Task> tasks)
     {
     	TaskReader reader = new TaskReader();
-        tasks.addAll(reader.getArrayFromFile(filename));// metoda dodaje wszystkie taski z file do arraylist task
+        tasks.addAll(reader.getArrayFromFile(filename));
     }
     
     
@@ -96,22 +96,17 @@ Scanner scan = new Scanner(System.in);
 		}
 	
     /**
-     * Print details of all the sightings.
+     * Print details of all the tasks.
      */
     public void printList()
     {
         tasks.forEach(task -> System.out.println(task.getDetails()));
     }
     
-    /**
-     * Print details of all the sightings of the given animal.
-     * @param animal The type of animal.
-     */
    
-    
     /**
-     * Print all the sightings by the given spotter.
-     * @param spotter The ID of the spotter.
+     * Print all the tasks by the given date.
+     * @param String date.
      */
     public void printTaskByDate(String date)
  {
@@ -213,7 +208,7 @@ public void printChangeMenu() {
 	}
 	
 	
-	
+	//method which initialize todolist
 	public void play() {
 		
 		
